@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pharmacy | Flaviol Academia</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <span class="menu-icon">☰</span>
+                <div class="logo">
+                    <a href="#">Flaviol<span>Academia.</span></a>
+                </div>
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="tutorials.html">Tutorials</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+    
+    <div class="header-buttons">
+        <a href="#" class="admission-btn" onclick="openModal()">Contact Us</a>
+    
+
+        <!-- Modal for Admission Form -->
+        <div id="admissionModal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h2>Contact Us</h2>
+
+                <div class="form-container">
+                    <!-- Left side for the image -->
+                    <div class="form-image">
+                        <img src="images/pixel.jpg.jpg"  alt="Admission Image">
+                    </div>
+
+                    <!-- Right side for the form -->
+                    <div class="form-section">
+                        <!-- Updated Admission Form -->
+                        <form id="admissionForm" class="admission-form" action="https://formspree.io/f/myzyeavp" method="POST">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        
+                            <label for="course">Course of Interest</label>
+                            <select id="course" name="course" required>
+                                <option value="" disabled selected>Select a course</option>
+                                <option value="pharmacology">Pharmacology</option>
+                                <option value="pharmacy practice">Pharmacy Practice</option>
+                                <option value="clinical pharmacy">Clinical Pharmacy</option>
+                                <option value="pharmaceutical analysis">Pharmaceutical Analysis</option>
+                                <option value="drug management">Drug Supply and Management</option>
+                            </select>
+                        
+                            <label for="message">Message (Optional)</label>
+                            <textarea id="message" name="message" placeholder="Any additional information"></textarea>
+                        
+                            <button type="submit" class="submit-btn">Submit</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="course-section">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <div class="breadcrumb">
+                <a href="pharmaceutical chemistry.html">Home <span>Our Courses</span></a>
+            </div>
+        </div>
+        <div class="course-grid">
+            <div class="course">
+                <img src="images/pharmacology.jpg" alt="Pharmacology">
+                <h3>Pharmacology</h3>
+                <p>Seamlessly visualize quality intellectual capital</p>
+                <a href="pharmacology.html">Read More</a>
+            </div>
+            <div class="course">
+                <img src="images/pharmacy practice.jpg" alt="Pharmacy Practice">
+                <h3>Pharmacy Practice</h3>
+                <p>Seamlessly visualize quality intellectual capital</p>
+                <a href="pharmacy-practice.html">Read More</a>
+            </div>
+            <div class="course">
+                <img src="images/clinical pharmacy.png" alt="Clinical Pharmacy">
+                <h3>Clinical Pharmacy</h3>
+                <p>Seamlessly visualize quality intellectual capital</p>
+                <a href="clinical-pharmacy.html">Read More</a>
+            </div>
+            <div class="course">
+                <img src="images/pharmaceutical analysis.jpg" alt="Pharmaceutical Analysis">
+                <h3>Pharmaceutical Analysis</h3>
+                <p>Seamlessly visualize quality intellectual capital</p>
+                <a href="pharmaceutical-analysis.html">Read More</a>
+            </div>
+            <div class="course">
+                <img src="images/drug supply and manangement.jpg" alt="Drug Supply and Management">
+                <h3>Drug Supply and Management</h3>
+                <p>Seamlessly visualize quality intellectual capital</p>
+                <a href="drug supply and manangement.html">Read More</a>
+            </div>
+            <div class="course">
+                <img src="images/pharmchem.jpg" alt="Pharmaceutics">
+                <h3>Pharmaceutics</h3>
+                <p>Seamlessly visualize quality intellectual capital</p>
+                <a href="pharmaceutics.html">Read More</a>
+            </div>
+            <div class="course">
+                <img src="images/computer.jpg" alt="Computer Studies">
+                <h3>Computer</h3>
+                <p>Seamlessly visualize quality intellectual capital</p>
+                <a href="computer-studies.html">Read More</a>
+            </div>
+            <div class="course">
+                <img src="images/pharmacognosy.jpg" alt="Pharmacognosy">
+                <h3>Pharmacognosy</h3>
+                <p>Seamlessly visualize quality intellectual capital</p>
+                <a href="pharmacognosy.html">Read More</a>
+            </div>
+            <div class="course">
+                <img src="images/pharmacognosy.jpg" alt="Pharmacognosy">
+                <h3>Pharmaceutical chemistry</h3>
+                <p>Seamlessly visualize quality intellectual capital</p>
+                <a href="pharmaceutical chemistry.html">Read More</a>
+            </div>
+            <div class="course">
+                <img src="images/what.jpg" alt="sap">
+                <h3>Social and administrative pharmacy</h3>
+                <p>Seamlessly visualize quality intellectual capital</p>
+                <a href="sap.html">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-about">
+                <h3>About Us</h3>
+                <p>Providing quality content for pharmacy students.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Our Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Our Contacts</h3>
+                <ul>
+                    <li>Phone: +254757838841</li>
+                    <li>Email: flaviolnganga@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("admissionModal");
+
+        // Function to open the modal
+        function openModal() {
+            modal.style.display = "flex";
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            modal.style.display = "none";
+        }
+
+        // Close the modal when clicking outside of it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+
+        // Close the modal on form submission (you might want to handle form submission here)
+        document.getElementById("admissionForm").onsubmit = function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            closeModal(); // Close the modal after submission
+            alert("Form submitted!"); // Show a confirmation message (or handle the submission logic)
+        };
+        document.getElementById('admissionForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+
+    // Collect the form data
+    const form = this;
+    const formData = new FormData(form);
+
+    // Send the form data using Fetch API
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            alert('Thank you! Your admission form has been submitted.');
+            form.reset(); // Reset the form fields
+            closeModal(); // Close the modal if needed
+        } else {
+            alert('There was a problem submitting your form. Please try again.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error submitting the form. Please try again.');
+    });
+});
+// JavaScript for toggling the menu
+document.querySelector('.menu-icon').addEventListener('click', function() {
+    document.querySelector('.nav').classList.toggle('open');
+});
+    </script>
+</body>
+</html>
+

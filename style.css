@@ -1,0 +1,532 @@
+/* Reset Styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Header Styles */
+.header {
+    background-color: #003366;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+    background-color: #005599;
+    border-radius: 50px;
+}
+
+/* Responsive Navigation Menu */
+.nav .menu-icon {
+    display: block;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav.open ul {
+    display: flex;
+}
+/* Header Button */
+.header-buttons {
+    text-align: center;
+    margin: 30px 0;
+}
+/* Admission Button */
+.admission-btn {
+    padding: 12px 24px;
+    background: linear-gradient(90deg, #005599, #00aaff);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admission-btn:hover {
+    background: linear-gradient(90deg, #004488, #0099cc);
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-image img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.admission-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.admission-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.admission-form input,
+.admission-form select,
+.admission-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.admission-form input:focus,
+.admission-form select:focus,
+.admission-form textarea:focus {
+    border-color: #007bff;
+}
+
+.admission-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('images/about-hero.jpg') no-repeat center center/cover;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* Course Section */
+.course-section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.course-section h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.course {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.course img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.course h3 {
+    font-size: 24px;
+    padding: 15px;
+    color: #003366;
+}
+
+.course p {
+    padding: 0 15px;
+    color: #666;
+}
+
+.course a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #003366;
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.course a:hover {
+    background-color: #005599;
+}
+
+.course:hover {
+    transform: scale(1.03);
+}
+
+/* Blog Page */
+.blog-posts {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.post {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.post img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.post h2 {
+    font-size: 22px;
+    padding: 15px;
+    color: #003366;
+}
+
+.post p {
+    padding: 0 15px 15px 15px;
+    color: #666;
+}
+
+.post a.read-more {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px 20px;
+    background-color: #003366;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.post a.read-more:hover {
+    background-color: #005599;
+}
+
+.post:hover {
+    transform: scale(1.03);
+}
+
+/* Footer */
+.footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-about,
+.footer-links,
+.footer-contact {
+    flex: 1;
+    padding: 20px;
+    min-width: 200px;
+}
+
+.footer h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer p,
+.footer ul,
+.footer ul li {
+    color: #fff;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #00aaff;
+}
+
+.footer-contact ul {
+    list-style: none;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+/* Tutorials Section */
+.tutorials-section {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.tutorials-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+.tutorial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.tutorial {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.tutorial img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tutorial h3 {
+    font-size: 24px;
+    padding: 15px;
+    color: #003366;
+}
+
+.tutorial p {
+    padding: 0 15px;
+    color: #666;
+}
+
+.tutorial a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #003366;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 0 0 8px 8px;
+    transition: background-color 0.3s ease;
+    margin: 20px 20px;
+}
+
+.tutorial a:hover {
+    background-color: #005599;
+}
+
+.tutorial:hover {
+    transform: scale(1.03);
+}
+    /* Responsive Layouts */
+    @media (max-width: 768px) {
+        .header .nav ul {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .tutorials-section h2 {
+            text-align: center;
+        }
+
+        .tutorial-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .footer {
+            text-align: center;
+        }
+    }
+@media (min-width: 600px) {
+    .nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .nav .menu-icon {
+        display: none;
+    }
+}
+
+/* For Desktops (min-width: 900px) */
+@media (min-width: 900px) {
+    .container {
+        width: 80%;
+    }
+
+    .hero-section h1 {
+        font-size: 56px;
+    }
+
+    .hero-section p {
+        font-size: 24px;
+    }
+}

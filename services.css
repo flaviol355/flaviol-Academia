@@ -1,0 +1,137 @@
+/* General styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f9;
+}
+
+/* Header Section */
+.header {
+    background-color: #283593;
+    padding: 20px 0;
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header .nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Hero Section */
+.services-hero {
+    background-image: url('images/services-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+.services-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.services-hero p {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 10%;
+    background-color: white;
+}
+
+.services .service-item {
+    margin-bottom: 40px;
+}
+
+.services .service-item h2 {
+    font-size: 2rem;
+    color: #283593;
+    margin-bottom: 10px;
+}
+
+.services .service-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+/* Content Section */
+.content-section {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.content-section h2 {
+    font-size: 32px;
+    text-align: center;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.notes, .questions {
+    margin-top: 20px;
+}
+
+.notes ul, .questions ul {
+    padding-left: 20px;
+}
+
+.notes li, .questions li {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.notes h3, .questions h3 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 15px;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #20232a;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.social-links li a img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s;
+}
+
+.social-links li a:hover img {
+    opacity: 0.7;
+}
